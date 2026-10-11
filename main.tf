@@ -1,0 +1,6 @@
+data "oci_dbmulticloud_oracle_db_azure_vault_association" "dbmulticloud_oracle_db_azure_vault_association_lookup" {
+  for_each = var.dbmulticloud_oracle_db_azure_vault_association_lookup
+
+  oracle_db_azure_vault_association_id = each.value.oracle_db_azure_vault_association_id
+}
+
